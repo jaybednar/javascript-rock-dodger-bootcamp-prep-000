@@ -56,7 +56,11 @@ function checkCollision(rock) {
 
 function createRock(x) {
   const rock = document.createElement('div')
-  const x = Math.floor(Math.random() * (380 - 0)) + 0  )
+  x = function getRandomIntInclusive(min, max) {
+  min = Math.ceil(0);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+}
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
