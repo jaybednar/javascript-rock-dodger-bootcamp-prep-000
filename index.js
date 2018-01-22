@@ -76,7 +76,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    
-   document.getElementById('game').append(rock)
+   GAME.appendChild(rock)
 
   function move(rock) {
     var top = 400
