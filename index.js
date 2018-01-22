@@ -56,7 +56,7 @@ function checkCollision(rock) {
 
 function createRock(x) {
   const rock = document.createElement('div')
-
+  const x = Math.floor(Math.random )
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
