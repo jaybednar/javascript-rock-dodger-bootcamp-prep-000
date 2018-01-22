@@ -76,7 +76,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    
-   $('#game').append(rock)
+   document.querySelector('#game').append(rock)
 
   function move(rock) {
     var top = 400
